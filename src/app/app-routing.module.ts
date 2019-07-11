@@ -10,8 +10,8 @@ const routes: Routes = [
   {path:'1',
     component:Comp1Component,
     children: [
-      {path:'ch1', component:Comp1Component},
-      {path:'ch2', component:Comp2Component}
+      {path:'ch1', component:Comp3Component},
+      {path:'ch2', component:Comp4Component}
     ]},
   {path:'2', component:Comp2Component},
   {path:'3', component:Comp3Component},
@@ -23,3 +23,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

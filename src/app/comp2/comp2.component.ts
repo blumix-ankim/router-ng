@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Comp2Component implements OnInit {
 
+  today = new Date();
+  money: number;
+
   constructor() { }
 
   ngOnInit() {
+    this.money = 3256145000;
   }
 
 
