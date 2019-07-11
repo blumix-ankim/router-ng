@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-comp3',
@@ -10,6 +11,12 @@ export class Comp3Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+
   }
 
+
+  goDetail(id){
+    console.log(id);
+  }
 }
