@@ -13,6 +13,10 @@ import localeKr from '@angular/common/locales/ko';
 import localeId from '@angular/common/locales/id';
 import {ShortenPipe} from '../pips/shorten.pipe';
 import {FormsModule} from '@angular/forms';
+import * as firebase from 'firebase';
+import {AngularFireModule} from '@angular/fire';
+import {environment} from '../environments/environment';
+import {AngularFirestore} from '@angular/fire/firestore';
 
 registerLocaleData(localeFr, 'fr');
 registerLocaleData(localeKr, 'kr');
@@ -30,10 +34,13 @@ registerLocaleData(localeId, 'id');
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase, 'ng-201907')
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'fr'},
+    AngularFirestore
+
   ],
   bootstrap: [AppComponent],
 
