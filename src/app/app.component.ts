@@ -12,7 +12,7 @@ export class AppComponent {
   constructor(private router: Router){};
 
   moveMenu(){
-    //console.log('a');
+    console.log('a');
 
     this.router.navigate(['2']);
   }
