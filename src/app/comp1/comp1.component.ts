@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Comp1Component implements OnInit {
 
+  imgSrc: string;
+
   constructor() { }
 
   ngOnInit() {
+    this.imgSrc = 'https://angular.io/assets/images/logos/angular/angular.svg';
   }
 
 }

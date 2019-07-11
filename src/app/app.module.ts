@@ -12,6 +12,7 @@ import localeFr from '@angular/common/locales/fr';
 import localeKr from '@angular/common/locales/ko';
 import localeId from '@angular/common/locales/id';
 import {ShortenPipe} from '../pips/shorten.pipe';
+import {FormsModule} from '@angular/forms';
 
 registerLocaleData(localeFr, 'fr');
 registerLocaleData(localeKr, 'kr');
@@ -28,8 +29,8 @@ registerLocaleData(localeId, 'id');
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'fr'},
